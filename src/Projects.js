@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Projects() {
   const projects = [
-    { name: "Portfolio Website", link: "https://yourportfolio.com" },
-    { name: "E-commerce App", link: "https://yourecommerce.com" },
+  //  { name: "Portfolio Website", link: "https://yourportfolio.com" },
+    //{ name: "E-commerce App", link: "https://yourecommerce.com" },
   ];
 
   return (
