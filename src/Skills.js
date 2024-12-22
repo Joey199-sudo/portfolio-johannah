@@ -1,18 +1,30 @@
-import React from "react";
+// Skills.js
+import React from 'react';
+import './Skills.css'; // Link the external CSS file
 
-export default function Skills() {
-  const skills = ["HTML", "CSS", "JavaScript", "React", "Bootstrap"];
+export default function Skills(){
+  const skills = [
+    { name: 'React.js', level: 'Intermediate' },
+    { name: 'JavaScript', level: 'Intermediate' },
+    { name: 'HTML5 & CSS3', level: 'Advanced' },
+    { name: 'Bootstrap', level: 'Advanced' },
+    { name: 'Responsive Design', level: 'Advanced' },
+    { name: 'Git & GitHub', level: 'Intermediate' },
+  ];
 
   return (
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
+    <div className="skills-container">
+      <h1 className="skills-header">Skills</h1>
+      <div className="skills-list">
         {skills.map((skill, index) => (
-          <li key={index}>{skill}</li>
+          <div className="skill-item" key={index}>
+            <h3>{skill.name}</h3>
+            <p>{skill.level}</p>
+          </div>
         ))}
-      </ul>
-    </section>
+      </div>
+    </div>
   );
-}
+};
 
 // Skills;
