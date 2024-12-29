@@ -1,46 +1,54 @@
 /* Skills.css */
 .skills-container {
-  padding: 20px;
-  font-family: Arial, sans-serif;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
   background-color: #f9f9f9;
-  color: #333;
   text-align: center;
 }
 
 .skills-header {
   font-size: 2.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   color: #2c3e50;
 }
 
 .skills-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
   padding: 20px;
 }
 
 .skill-item {
-  background-color: #fff;
-  border: 2px solid #2c3e50;
-  border-radius: 8px;
-  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.skill-item:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
 .skill-item h3 {
-  font-size: 1.5rem;
   margin-bottom: 10px;
   color: #2c3e50;
 }
 
+.progress-bar-container {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  height: 15px;
+  width: 100%;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #2c3e50;
+  transition: width 0.3s ease;
+}
+
 .skill-item p {
-  font-size: 1rem;
+  margin-top: 10px;
   color: #555;
 }
